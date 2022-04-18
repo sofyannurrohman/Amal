@@ -1,0 +1,45 @@
+.achievement {
+  margin-top: 7rem;
+  display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.icon {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.icon > :nth-of-type(1) {
+  text-align: center;
+  color: var(--darkgreen);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.icon > :nth-of-type(2) {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 2000px) {
+  .achievement {
+    flex-direction: row;
+
+    height: max-content;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .achievement {
+  }
+}
+@media screen and (max-width: 650px) {
+  .achievement {
+    height: min-content;
+    flex-direction: column;
+  }
+}

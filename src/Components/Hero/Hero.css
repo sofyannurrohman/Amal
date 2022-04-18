@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+.h-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.description {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description > :nth-child(1) {
+  font-size: 3rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.h-button {
+  width: 10rem;
+}
+.h-right {
+  flex: 1;
+}
+.h-right > img {
+  width: 900px;
+  border-radius: 2rem;
+  box-shadow: var(--boxShadow);
+}
+.sosmed {
+  margin-top: -2rem;
+  margin-left: -3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sosmed > * {
+  transform: scale(0.4);
+}
+.sosmed > *:hover {
+  transform: scale(0.5);
+  transition: 300ms;
+}
+@media screen and (max-width: 2000px) {
+  .hero {
+    height: max-content;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .hero {
+    height: max-content;
+    flex-direction: column-reverse;
+  }
+  .h-right > img {
+    width: 600px;
+  }
+  .sosmed {
+    transform: scale(0.8);
+  }
+  .description > :nth-child(1) {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .description > :nth-child(2) {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .h-left {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero {
+    height: max-content;
+  }
+  .h-left {
+    flex-direction: column;
+  }
+  .h-right > img {
+    width: 400px;
+  }
+}

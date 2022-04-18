@@ -1,0 +1,9 @@
+.footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer :nth-child(1) {
+  font-weight: bold;
+}

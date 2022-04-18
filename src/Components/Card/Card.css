@@ -1,0 +1,22 @@
+.card {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card > img {
+  width: 600px;
+  height: 600px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 300ms;
+}
+.card > :nth-last-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
