@@ -10,7 +10,7 @@ const Achievement = () => {
       <div className="icon">
         <img style={{ marginRight: "2rem" }} src={Vector1} alt="vector1" />
         <span>985+</span>
-        <span>Donasi yang diterima</span>
+        <span>Donasi Diterima</span>
       </div>
       <div className="icon">
         <img src={Vector2} alt="vector2" />

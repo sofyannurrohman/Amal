@@ -10,10 +10,11 @@
 
 .icon {
   display: flex;
-  flex: 1;
+  flex: auto;
   gap: 0.5rem;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .icon > :nth-of-type(1) {
   text-align: center;
@@ -41,5 +42,19 @@
   .achievement {
     height: min-content;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .icon > :nth-of-type(1) {
+    font-size: 1.25rem;
+  }
+  .icon > :nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+  .icon > img {
+    width: 60%;
+  }
+  .achievement {
+    margin-top: 0;
   }
 }

@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.25;
+  align-items: center;
   text-align: center;
 }
 .s-description > :nth-of-type(1) {
@@ -37,26 +38,61 @@
     height: max-content;
   }
   .community {
+    overflow: scroll;
+    overflow-y: auto;
     position: relative;
-    width: 50rem;
-    flex-direction: column;
+    width: 40rem;
+    flex-direction: row;
   }
   .s-description > :nth-of-type(1) {
     font-size: 2rem;
     font-weight: bold;
+  }
+  .s-description > :nth-of-type(2) {
+    width: 70%;
   }
 }
 @media screen and (max-width: 650px) {
   .support {
     height: max-content;
   }
+
   .community > * {
     transform: scale(0.8);
 
     margin-bottom: 3rem;
   }
   .s-description > :nth-of-type(2) {
-    font-size: 0.5rem;
+    width: 60%;
+    font-size: 0.8rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .s-description > :nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .s-description > :nth-of-type(2) {
+    margin-top: 0.5rem;
+    width: 300px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .s-left {
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .community > * {
+    transform: scale(0.8);
+  }
+  .community {
+    align-items: center;
+    width: 500px;
+    flex-direction: row;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    gap: 0.3rem;
   }
 }

@@ -90,3 +90,28 @@
     width: 400px;
   }
 }
+@media screen and (max-width: 350px) {
+  .description > :nth-child(1) {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .description {
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .description > :nth-child(2) {
+    font-size: 0.65rem;
+    width: 70%;
+    text-align: center;
+  }
+  .h-right > img {
+    width: 300px;
+  }
+  .sosmed {
+    margin-left: 0;
+    width: 500px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
+}

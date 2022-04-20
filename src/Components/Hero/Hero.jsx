@@ -4,6 +4,7 @@ import hero from "../../assets/hero.jpg";
 import Facebook from "../../assets/facebook .png";
 import Youtube from "../../assets/youtube.png";
 import Instagram from "../../assets/ig.png";
+import Donate from "../../pages/Donate";
 const Hero = () => {
   return (
     <div className="hero">
@@ -19,7 +20,10 @@ const Hero = () => {
             voluptatum,
           </span>
         </div>
-        <button className="button h-button">Sedekah Sekarang</button>
+        <a href="../../pages/Donate.js">
+          <button className="button h-button">Sedekah Sekarang</button>
+        </a>
+
         <div className="sosmed">
           <a href="https://github.com/sofyannurrohman">
             <img src={Facebook} alt="facebook" />
