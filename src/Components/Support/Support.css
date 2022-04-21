@@ -32,16 +32,24 @@
 }
 
 @media screen and (max-width: 2000px) {
+  .support {
+    height: max-content;
+  }
+  .s-left {
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1360px) {
   .support {
     height: max-content;
   }
+  .s-left {
+    align-items: center;
+  }
   .community {
     overflow: scroll;
     overflow-y: auto;
-    position: relative;
-    width: 40rem;
+    max-width: 1000px;
     flex-direction: row;
   }
   .s-description > :nth-of-type(1) {
@@ -68,7 +76,7 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .s-description > :nth-of-type(1) {
     font-size: 1.2rem;
     font-weight: bold;

@@ -44,9 +44,19 @@
   }
 }
 
+@media screen and (max-width: 1360px) {
+  .about-us {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .Detail > :nth-of-type(1) {
+    width: auto;
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 650px) {
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .about-us {
     width: fit-content;
     text-align: left;
@@ -54,7 +64,7 @@
     margin-left: -1rem;
   }
   .illus > img {
-    height: 10rem;
+    height: 14rem;
   }
   .Detail {
     margin-left: 0;

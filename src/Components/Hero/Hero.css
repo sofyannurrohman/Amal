@@ -90,7 +90,7 @@
     width: 400px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .description > :nth-child(1) {
     font-size: 1.3rem;
     text-align: center;
