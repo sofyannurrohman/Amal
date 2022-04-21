@@ -76,7 +76,7 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
   .s-description > :nth-of-type(1) {
     font-size: 1.2rem;
     font-weight: bold;
@@ -97,6 +97,7 @@
   .community {
     align-items: center;
     width: 500px;
+    height: fit-content;
     flex-direction: row;
     overflow: scroll;
     scroll-behavior: smooth;

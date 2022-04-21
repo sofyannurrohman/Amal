@@ -56,12 +56,12 @@
 }
 @media screen and (max-width: 650px) {
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
   .about-us {
     width: fit-content;
     text-align: left;
     flex-direction: column;
-    margin-left: -1rem;
+    margin-left: -2rem;
   }
   .illus > img {
     height: 14rem;
@@ -76,6 +76,7 @@
   }
   .Detail > :nth-of-type(2) {
     font-size: 0.8rem;
+    width: fit-content;
   }
   .Detail > :nth-of-type(2) {
     font-size: 0.8rem;

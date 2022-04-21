@@ -20,3 +20,10 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+@media screen and (max-width: 370px) {
+  .card > img {
+    width: 400px;
+    height: 400px;
+  }
+}
